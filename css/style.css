@@ -244,6 +244,14 @@ span.raised-text {
         width: 100%;
     }
 
+    #teams .member {
+        /* float: none; */
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        padding: 16px;
+    }
+
     header {
         padding-bottom: 20px;
     }
@@ -252,18 +260,6 @@ span.raised-text {
         margin-top: 40px;
     }
 
-    #newsletter button,
-    .quote button {
-        display: block;
-        width: 100%;
-    }
-
-    #newsletter form input[type="email"],
-    .quote input,
-    .quote textarea {
-        width: 100%;
-        margin-bottom: 5px;
-    }
 }
 
 /* Moving Volunteer Icon */
@@ -302,6 +298,48 @@ span.raised-text {
         background-position: 0 0;
     }
 }
+
+
+
+/* Team */
+
+#team-header {
+    min-height: 200px;
+    background: #ccfccb;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    margin: 70px;
+    border: 0;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+#teams .member {
+    float: left;
+    text-align: center;
+    width: 23%;
+    /* padding: 10px; */
+    padding: 6px;
+    padding-bottom: 15px;
+    margin: 4px;
+    font-weight: 500;
+}
+
+#teams .member img {
+    width: 160px;
+    height: 120px;
+    border-radius: 70px;
+    border: 4px #188038 solid;
+}
+
+#teams .member a {
+    text-decoration: none;
+    color: #188038;
+}
+
 
 /* Login Style */ 
 button{
