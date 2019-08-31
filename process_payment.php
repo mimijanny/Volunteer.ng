@@ -73,12 +73,15 @@ if (isset($_GET['txref'])) {
         $queryDB = mysqli_query($con, "INSERT INTO donations SET status = 'Successful', transaction_ref = '$txref', donation_amount = '$amount', user_id = '$userId', email_of_donor = '$email', name_of_donor = '$fullName'");
         if ($queryDB) {
             addAlert('success', 'Donation Received successfully!');
+        echo "<script type='text/javascript'>alert('Donation Received successfully')</script>";
+
 
             //TODO: Redirect to payment success page
             echo "<script type='text/javascript'>document.location='index.php'</script>";
             exit(0);
         } else {
             addAlert('error', 'Transaction Successful, but something went wrong. Contect volunteerng@gmail.com');
+        echo "<script type='text/javascript'>alert('Transaction Successful, but something went wrong. Contect volunteerng@gmail.com')</script>";
 
             echo "<script type='text/javascript'>document.location='index.php'</script>";
             exit(0);
@@ -86,6 +89,7 @@ if (isset($_GET['txref'])) {
     } else {
         //Trasanction failed
         addAlert('error', 'Transaction Failed Please try again');
+        echo "<script type='text/javascript'>alert('Transaction Failed Please try again')</script>";
 
         echo "<script type='text/javascript'>document.location='index.php'</script>";
         exit(0);

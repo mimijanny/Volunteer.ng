@@ -3,7 +3,7 @@ require('includes/config.php');
 require('includes/functions.php');
 
 
-if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount'])) {
+if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
   header('Location: index.php');
   exit(0);
 }
@@ -11,6 +11,8 @@ if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount'])) 
 $userId = $_GET['user'];
 $email = $_GET['email'];
 $amount = $_GET['amount'];
+$first_name = $_GET['firstname'];
+$last_name = $_GET['lastname'];
 
 $reference = generateRef($userId);
 
@@ -23,8 +25,8 @@ $currency = "NGN";
 $txref = $reference; //unique references for transaction.
 $PBFPubKey = $flutterWavePublicKey; //FlutterWave Public Key
 $redirect_url = $redirectUrl;
-$first_name = 'Jude';
-$last_name = 'Jonathan';
+// $first_name = 'Jude';
+// $last_name = 'Jonathan';
 $button = 'Donate';
 $title = 'VolunteerNG';
 

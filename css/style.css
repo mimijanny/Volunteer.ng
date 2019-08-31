@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 360px;
+    width: 80px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -354,9 +354,9 @@ button{
   border-radius: 12px;
 }
 
-body{
+/* body{
     height: 100vh;   
-}
+} */
 
 
 input[type=text] {
@@ -372,3 +372,4 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
   }
+
