@@ -6,9 +6,14 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 360px;
     margin: auto;
     overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 1;
+    padding: 100px 100px;
 }
 
 ul {
@@ -294,6 +299,8 @@ span.raised-text {
     }
 }
 
+
+
 /* Team */
 
 #team-header {
@@ -332,3 +339,36 @@ span.raised-text {
     text-decoration: none;
     color: #188038;
 }
+
+
+/* Login Style */ 
+button{
+    background-color: #188830; 
+  border: none;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+body{
+    height: 100vh;   
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
