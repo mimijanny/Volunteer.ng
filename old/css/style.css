@@ -9,6 +9,11 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 1;
+    padding: 100px 100px;
 }
 
 ul {
@@ -293,6 +298,8 @@ span.raised-text {
         background-position: 0 0;
     }
 }
+
+
 
 /* Team */
 
