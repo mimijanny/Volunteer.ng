@@ -46,11 +46,6 @@
   padding: 6px 30px;
   display: inline-block;
 }
-/* .donate-button:hover {
-  background-color: #188038;
-  color: #fff;
-  border: 2px solid #fff
-} */
 .help-image{
   width: 20%;
    filter: invert(1);
@@ -73,18 +68,3 @@
 .u-margin-bottom-big {
     margin-bottom: 8rem;
 }
-
-
-
-   /* [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-size: 60px; 
-    font-style: normal;
-	margin-left: 10px; 
-	margin-bottom: .5rem;
-	display: inline-block;
-    background-image: linear-gradient(to right, #2af598, #009efd);
-    -webkit-background-clip: text;
-    color: transparent;
-} */
-
