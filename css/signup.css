@@ -4,24 +4,37 @@
 }
 html,body{
     width:100%;
-    height:100%
+    height:100%;
 }
 .moving-volunteer{
    display:grid;
-   grid-template-columns: 1fr 1fr
+   grid-template-columns: 1fr 1fr;
+   width:100%;
 }
 .firstContainer{
     background-image: url(https://s3-alpha-sig.figma.com/img/6377/4b92/19442d3586cf7e0683c684acddfb73a9?Expires=1567987200&Signature=D4WWU8354f19fhuYZ7jz3PSe7qHXEE4YHmOBCo1DdAfuMyVMh5maPK7CICiq45a2wwXDN93ZSMpD8Aezh~jZGxXvy2uzhDktKNc8-GdY8PW5tJWWBpfOwGbmS7hY~xJ0edP~CEcKooknvOtIZsvB5L~N2wY2ozfuY2QqupKsAgSWc~sNGOGRnbp~GX6y1~xhbod5sRk8h~56VgB9RRIB8miWMelMXzkrx~XUBOxoxLwGzwhqYHYORwZWoN4ogYdH6IFAp-Hwe5TEWNVCGrvPirVmdrnIWDQoNVZ66hb97aJxRMqbiMfR2jAsStVtaZCw6jqrVgYCkhqabLooJy0LSw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
     background-position:left;
     background-size: cover;
     height: 100%;
-    opacity: 0.65;
+    opacity: 1;
     color:white;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    padding:0em 2em
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding:0 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 100%;
+    background-color: #188038;
+    z-index: 1;
+    opacity: 0.3;
 }
 .firstContainer h1{
     font-size: 2em
@@ -31,21 +44,19 @@ span{
     font-size: 1.4em
 }
 .horizontalLine{
-    margin-top: 2.5em;
-    margin-left:-19.8em;
+    margin-top: 0em;
+    margin-left:0;
     width: 6em;
     border: none;
-    border-top: 5px solid #ffffff;
-    position: fixed
+    border-top: 5px solid #188038;
 }
 .firstContainer p{
     letter-spacing: 0.1em;
     line-height: 1.1em;
     font-size:1.1em;
-    padding-top:25%;
+    padding-top:30px;
     width:40vw;
-    position: fixed;
-    font-family: cursive
+    font-family: cursive;
 }
 .secondContainer{
     background-color: white;
@@ -55,7 +66,8 @@ span{
 }
 .secondContainer h2{
     font-size: 1.8em;
-    letter-spacing: 0.2em
+    letter-spacing: 0.2em;
+    margin-top: 1.5em;
 }
 .horizontalLine2{
     margin-top: 0em;
@@ -89,16 +101,18 @@ span{
 :-ms-input-placeholder{
     color:rgb(219, 207, 207)
 }
+
 .secondContainer input {
-    width:100%;
+    width:90%;
     margin-bottom:2em;
-    padding:1.5em 0em 1.5em 1em;
-    border-radius: 1em;
+    padding:0.6em 0em 0.6em 1em;
+    border-radius: 9px;
 }
 form button {
-    width:100%;
+    width:93%;
     text-align: center;
     padding:1em 0em;
+    margin-bottom: 2em;
     color:white;
     background-color: #188038;
     border-radius: 0.5em;
