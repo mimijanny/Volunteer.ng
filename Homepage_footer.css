@@ -1,0 +1,55 @@
+	footer {
+		background-color: #000000;
+		color: #FFFFFF;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+
+	ul {
+		color: #FFFFFF;
+		
+	}
+
+
+	li {
+		color: #FFFFFF;
+		list-style: none;
+		line-height: 30px;
+	}
+
+
+	div.donations li:before {
+		content: "\f0a9";
+		font-family: "FontAwesome";
+		color: #FFF;
+		width: 10px;
+		height: 10px;
+		margin-right: 5px;
+	}
+
+	div.quick_link li:before {
+		content: "\f0a9";
+		font-family: "FontAwesome";
+		color: #FFF;
+		width: 10px;
+		height: 10px;
+		margin-right: 5px;
+	}
+
+
+
+	div.update form {
+		padding-right: 10px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+
+	h4, h6 {
+		padding-left: 35px;
+	}
