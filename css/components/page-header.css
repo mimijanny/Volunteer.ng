@@ -5,7 +5,7 @@
   width: 100vw;
   background-color: rgba(0, 128, 0, 0.45);
   color: white;
-  padding: 0 30px;
+  padding: 0 20px;
   position: fixed;
   top: 3vh; /*Position this right under the top banner*/
   z-index: 2;
