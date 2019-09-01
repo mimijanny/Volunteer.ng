@@ -332,3 +332,84 @@ span.raised-text {
     text-decoration: none;
     color: #188038;
 }
+
+.shadow {
+    -webkit-box-shadow: 5px 5px 15px 5px #F1FFFA;
+    box-shadow: 5px 5px 15px 5px #F1FFFA;
+    background: #F1FFFA;
+    border: 0;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.entity {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.entity img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px #188038 solid;
+}
+
+.entity .entity-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size:13px;
+    color: #000000;
+}
+
+.entity .entity-text-green {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size:14px;
+    color: #188038;
+}
+
+.entity-text-desc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size:13px;
+    color: #000000;
+}
+
+.entity-bottom-text {
+    padding: 20px;
+
+}
+
+.entity-bottom-text span.entity-goal-text {
+    float: left;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.entity-bottom-text span.entity-raised-text {
+    float: right;
+    color: #188038;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.entity-donate-button {
+    float: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.entity-donate-button a {
+    background: #188038;
+    padding: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
