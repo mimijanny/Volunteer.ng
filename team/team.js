@@ -1,3 +1,5 @@
+// Show Team Members
+
 const TeamList = document.querySelector(".container");
 let team = [
   {
@@ -61,3 +63,23 @@ team.forEach(team => {
   </div>`;
 });
 TeamList.innerHTML = output;
+
+//  Handle subscription to our emails (commented out for now)
+
+const emailSub = document.querySelector(".submit");
+const form = document.querySelector("form");
+
+const handleSubmit = async () => {
+  // const data = await fetch(url, {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json"
+  //   },
+  //   body: JSON.stringify(data)
+  // })
+  //   .then(response => console.log("Success:", JSON.stringify(response)))
+  //   .catch(error => console.error("Error:", error));
+  form.reset();
+};
+
+emailSub.addEventListener("click", handleSubmit);

@@ -52,6 +52,10 @@ body {
   z-index: 1;
 }
 
+li {
+  list-style: none;
+}
+
 .topmost-nav .left,
 .topmost-nav .right {
   display: inline-block;
@@ -183,6 +187,96 @@ a {
 #teams .member a {
   text-decoration: none;
   color: #188038;
+}
+
+footer {
+  margin-top: 900px;
+  background-color: #031308;
+}
+
+.footer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer div:nth-child(1) {
+  text-align: center;
+  padding: 20px;
+  margin: auto 0;
+}
+
+.footer div:nth-child(1) i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.footer div:not(nth-child(1)) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer span,
+.footer a {
+  color: white;
+}
+.footer h3 {
+  margin-left: 20px;
+  color: white;
+}
+.footer ul li {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer input {
+  font-size: 15px;
+  float: left;
+  right: 0;
+  font-weight: bold;
+}
+
+.footer .submit {
+  height: 22.8px;
+  background: #188038;
+  width: 30px;
+  text-align: center;
+}
+
+.footer .input-field span:hover {
+  opacity: 0.5;
+}
+
+.footer .submit i {
+  color: white;
+}
+
+.footer span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.footer ul li i {
+  margin-left: -25px;
+  color: white;
+}
+
+.footer a:hover,
+.footer ul li:hover,
+.footer ul li i:hover {
+  color: #188038;
+}
+
+.footer a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer a i {
+  color: white;
+}
+.footer .inline a {
+  display: inline-block;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
