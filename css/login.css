@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    background-image: url(../images/login-bg.svg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+#btn-color{
+    background: #188038;
+    border-color: #188038; 
+}
+
+.form-control{
+    height: 40px !important;
+}
+
+.login-container{
+    background: #fff;
+    width:500px;
+    height: 400px;
+    text-align: left;
+    padding: 20px 70px;
+}
+
+label{
+    display: block;
+    width: 100%;
+}
+
+.form-group{
+    margin: 2vh 0;
+    text-align: left;
+}
+
+a:hover{
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.forgot{
+    text-align: left;
+    color: red;
+}
+
+.signup{
+    color: #575757;
+}
+
+.red-text{
+    color: red;
+}
