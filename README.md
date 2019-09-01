@@ -9,6 +9,10 @@ This applies to all HTML, CSS, and JavaScript code.
 CSS is great, but it can get messy and difficult to maintain styles as the css file grows larger. 
 It is therefore necessary for the team to adhere to strict guidelines when work on our stylesheets
 to keep the code clean and maintainable.
+**Golden Rule:** Do not use abbreviations when naming elements. This introduces confusion as other team members may struggle to figure out what it represents. For example, use "button" instead of "btn". It may be longer to type, but it makes your code more readable and saves the team headache. Be very generous with comments.
+
+#### Do Not Use Inline Styles. Ever.
+Inline styles have just about the highest specificity an so cannot be overriden from with the stylesheet. They also make debugging style conflicts more difficult. Inline styles do not lend themselves to the DRY principle.
 
 #### Modularity
 The complexity of a stylesheet is directly proportional to the length of the file. 
@@ -76,7 +80,7 @@ Additional styles to be applied when it is disabled will then be defined as
 }
 
 The use of state classes in place of the BEM double dash modifier convention is to allow easy toggling of these
-states from JavaScript using the HTMLElement.classList.add('is.disabled') method.
+states from JavaScript using the HTMLElement.classList.add('is.disabled') method. This also offers a higher specifity which assures that the state changes will override the default styles.
 
 ##### Rule 5 - Decendant selectors - A special case.
 Sometimes, it may be necessary to change an elements styles based on the state of it's parent *block*.
@@ -86,8 +90,11 @@ We might want to highlight the action button on a card when the user clicks on t
 .card.is-focused .card__button {
   background-color: var(--accent-color);
 }
+This also offers a higher specificity which ensures that the state changes will override the defaults.
 
 ### HTML
+**Golden Rule:** Do not use abbreviations when naming elements. This introduces confusion as other team members may struggle to figure out what it represents. For example, use "button" instead of "btn". Be very generous with comments.
+
 #### Semantics Please.
 HTML5 introduced semantic tags that such as <section> and <footer> which implicitly convey meaning about their
 purpose on the page. These tags improve accesibility by making it easier for scren readers to interprete 
@@ -104,5 +111,7 @@ The anchor tag in HTML has a specific function - linking a user to another page.
 <header>, <section>, <aside>, <footer>. These are semantic HTML5 tags used to mark separate sections of a page. Do NOT use the generic <div> tag where any of these would be more appropriate.
 
 ### JavaScript
+**Golden Rule:** Do not use abbreviations when naming elements. This introduces confusion as other team members may struggle to figure out what it represents. For example, use "let navButton" instead of "let navBtn". It may be longer to type, but it makes your code more readable and saves the team headache. Be very generous with comments.
+
 Write clean code. Make things modular. Keep external libraries to minimum to avoid making the app bloated.
 Further guidelines to be included as the project progresses.
