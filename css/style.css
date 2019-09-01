@@ -78,9 +78,42 @@ a.link_button {
 .top-header .current a {
     color: #96e6b3;
     font-weight: bold;
-
 }
 
+.container {
+    margin-top: 10px;
+}
+
+.container i:hover {
+    font-size: 2.5ex;
+  }
+
+i {
+    color: #188038;
+  }
+  
+a {
+    text-decoration: none;
+    color: #188038;
+  }
+
+.topmost-nav {
+    position: relative;
+    display: block;
+    height: 40px;
+    background-color: white;
+    padding: 0 15px 0 15px;
+    z-index: 1;
+    font-size: 13px;
+  }
+
+.space-evenly { 
+    justify-content: space-evenly; 
+  }
+
+.flex-item {
+    margin: 10px;
+}
 
 /* Header **/
 header {
@@ -416,12 +449,4 @@ span.raised-text {
     font-size: 15px;
     border-radius: 10px;
     text-align: center;
-}
-
-.space-evenly { 
-    justify-content: space-evenly; 
-  }
-
-.flex-item {
-    margin: 10px;
 }
