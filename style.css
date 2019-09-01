@@ -1,0 +1,91 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%
+}
+
+.footer-div {
+    width: 90%;
+    margin: 0% 0% 0% 0% auto;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.info-div {
+    float: left;
+    text-align: left;
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.info {
+    width: 20%;
+}
+
+.stay-updated {
+    width: 130%;
+    text-align: left;
+    ;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: #188038;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+#info-icons {
+    padding-right: 5%;
+}
+
+.text-box {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 5%;
+    padding: 13px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: #188038;
+    text-align: center;
+}
+
+.volunteer-button {
+    width: 60%;
+    padding: 13px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: #188038;
+    border-radius: 8px;
+    background: white;
+    color: #188038;
+    font-size: 100%;
+}
+
+#subscribe {
+    font-size: 70%;
+    line-height: 0.1cm;
+}
