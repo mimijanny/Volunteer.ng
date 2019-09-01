@@ -92,6 +92,9 @@ We might want to highlight the action button on a card when the user clicks on t
 }
 This also offers a higher specificity which ensures that the state changes will override the defaults.
 
+#### Themes and Color Schemes With CSS Variables (Custom Properties)
+A separate CSS file, vars.css will define color and other theming values. This file must be imported by all other CSS files to use the predefined themes when styling elements. This makes it easier manage color values and themes from a central. **Implementation is ongoing**.
+
 ### HTML
 **Golden Rule:** Do not use abbreviations when naming elements. This introduces confusion as other team members may struggle to figure out what it represents. For example, use "button" instead of "btn". Be very generous with comments.
 
