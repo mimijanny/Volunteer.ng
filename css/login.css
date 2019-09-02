@@ -29,9 +29,16 @@ h1{
 .login-container{
     background: #fff;
     width:500px;
-    height: 400px;
+    min-height: 400px;
     text-align: left;
     padding: 20px 70px;
+}
+
+.logo-img{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
 }
 
 label{
