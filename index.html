@@ -15,7 +15,38 @@
 </head>
 
 <body>
+
+  <!--Header -->
+  <header>
+    <div class="main-header">
+        <div id="social-media">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+        </div>
+        <div id="contact">
+                <i class="fas fa-phone-alt">&nbsp;+234806666904</i>
+                <i class="fas fa-envelope">&nbsp;Volunteerng@yahoo.com</i>  
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar_brand">
+          <img src="images/logo.png" class="logo"/>
+        </div>
+        <div class="navbar_link">
+            <ul class="navbar-items">
+                <li class="navbar-item navbar-item--cta a"><a href="#">HOME</a></li>
+                <li class="navbar-item"><a href="#">ENTITIES</a></li>
+                <li class="navbar-item"><a href="#">ABOUT</a></li>
+                <li class="navbar-item"><a href="#">THE TEAM</a></li>
+                <li class="navbar-item"><a href="#">LOGIN</a></li>
+                <li class="navbar-item"><a href="#">SIGN UP</a></li>
+            </ul>
+        </div>
+
   <!-- Top Header -->
+      <!-- TODO: Remove later, commented out to fix conflict
   <div class="topmost-nav">
     <div class="left col-3">
       <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
@@ -33,7 +64,9 @@
   <header>
     <div class="container">
       <div id="branding">
-        <img src="images/logo.png" width="120" height="70" />
+        <a href="index.html">
+          <img src="images/logo.png" width="120" height="70" />
+        </a>
       </div>
       <nav>
         <ul>
@@ -49,11 +82,34 @@
               <i class="fa fa-person-booth"></i> Sign Up</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
+
     </div>
-  </header>
+
+
+            <!-- Slideshow container -->
+<div class="carousel">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="images/holding_hands.jpg"class="carousel-image">
+        </div>
+    
+        <div class="mySlides fade">
+                <img src="images/holding_hands.jpg"class="carousel-image">
+                
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="images/holding_hands.jpg"class="carousel-image">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
   <!-- Main -->
+  <!-- TODO: Remove later, commented out to fix conflict
   <section id="main">
     <div class="container">
       <h1>You can make a difference!</h1>
@@ -64,10 +120,65 @@
         <a href="signup.html" class="main_link_button">
           <i class="fa fa-handshake"></i> I Need a Volunteer</a>
       </p>
+-->
+
     </div>
-  </section>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</header>
+
+
 
   <!-- How you can Help -->
+      
+      <section>
+        <div class="u-center-text u-margin-top-small u-margin-bottom-small">
+            <h1 class="heading-secondary">How You Can Help</h1>
+        </div>
+        <div class='page-wrapper  u-margin-bottom-big'>
+            <div class='row  u-margin-top-small'>
+                <div class='column'>
+                    <div class='col-1-of-3'>
+                            <img src="images/coin.svg" alt="coin" class="help-image">
+                            <h2 class="heading-tertiary u-margin-top-small u-margin-bottom-small">Give Donation</h2>
+                            <p class="help-text">
+                                Lorem ipsum dolor adipisicing elit. Onnumquam reiciendisexplicabo consequatur, at excepturi tempore itaque odio omnis unde? Placeat voluptatum temporibus sint excepturi!
+                            </p>
+                            <a href="" class="donate-button">Donate</a>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class='col-2-of-3'>
+                            <img src="images/giftbox (1).svg" alt="giftbox" class=" help-image">
+                            <h2 class="heading-tertiary  u-margin-top-small u-margin-bottom-small">Give Material</h2>
+                            <p class="help-text">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit.cum, facere velit repellendus sequi! In hic accusamus repellendus tenetur eos nostrum illo? Eaque.
+                            </p>
+                            <a href="#" class="donate-button">Donate</a>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class='col-3-of-3'>
+                            <img src="images/customer.svg" alt="customer" class="help-image">
+                            <h2 class="heading-tertiary u-margin-top-small u-margin-bottom-small">Give Service</h2>
+                            <p class="help-text">
+                                Lorem ipsum dolor sit amet consectetur excepturi quae sapiente numquam error deserunt, hic minus et iure, obcaecati eaque quam velit voluptatibus labore. Adipisci?
+                            </p>
+                            <a href="" class="donate-button">Donate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+      
+    <!-- TODO: Remove, commented out to resolve conflitcs
 
   <section id="boxes">
     <div class="container">
@@ -90,7 +201,7 @@
           augue, viverra sit amet ultricies
         </p>
         <br />
-        <!-- <a href="" class="link_button">Donate</a> -->
+        
         <b> Coming Soon </b>
       </div>
       <div class="box">
@@ -101,16 +212,16 @@
           augue, viverra sit amet ultricies
         </p>
         <br />
-        <!-- <a href="" class="link_button">Donate</a> -->
+        
         <b> Coming Soon </b>
       </div>
     </div>
-  </section>
+  </section> -->
   <br /><br />
 
   <!-- What we Do -->
   <section id="main">
-    <div class="container">
+    <div class="container" id="what-we-do">
       <h1>What we Do</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
@@ -169,6 +280,7 @@
     </div>
   </section>
 
+
   <!-- Our Partners -->
 
     <section id="boxxes">
@@ -188,6 +300,24 @@
         </div>
       </div>
     </section>
+
+  <script>
+          var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block"; 
+        setTimeout(showSlides, 10000); // Change image every 10 seconds
+      }
+  </script>
+
 </body>
 
 </html>
