@@ -1,3 +1,9 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
@@ -117,7 +123,7 @@ header .highlight,
 header .current a {
     background: #96e6b3;
     font-weight: bold;
-    /* text-decoration: none; */
+     text-decoration: none; 
     border-radius: 7px;
     padding: 11px;
     margin: 15px;
@@ -188,6 +194,11 @@ header a:hover {
     margin: 4px;
     border: 1px #ccfccb solid;
     border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#boxes .box:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
 #boxes .box img {
