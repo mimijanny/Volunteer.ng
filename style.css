@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: url(../Volunteer.ng/img/larm-rmah-AEaTUnvneik-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@ input {
 }
 
 button {
-  background-color: #188038; /* Green */
+  background-color: #188038; 
   border: none;
   border-radius: 8px;
   color: white;
@@ -50,4 +50,4 @@ h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 10px;
-}
+} */
