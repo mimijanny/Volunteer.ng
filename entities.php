@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+require('includes/db_connection.php');
+include('includes/functions.php');
+
+
+$query = mysqli_query($con, "SELECT * FROM users") or die(mysqli_error($con));
+$count = mysqli_num_rows($query);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,39 +76,53 @@
 
         <br><br>
 
-        <div class="shadow">
-            <div class="entity">
-                <div class="col-2">
-                    <img src="images/disaster.jpg">
-                </div>
-                <div class="col-10">
-                    <span class="entity-text"> Jude Jonathan </span> <br>
-                    <span class="entity-text"> A Student at Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempora,
-                        quos dolore quod adipisci architecto ullam deleniti odit laudantium </span>
+        <?php
+
+        if ($count == 0) {
+            echo "<h1>No Enitity Yes!</h1>";
+        } else {
+            while ($row = mysqli_fetch_array($query)) {
+                $userId = $row['user_id'];
+                //Get total donations for user
+                $user_donation_query = mysqli_query($con, "SELECT SUM(amount) as totalDonations FROM donations WHERE user_id = '$userId'") or die(myslqli_error($con));
+                $donation_row = mysqli_fetch_array($user_donation_query);
+
+                $donations = $donation_row['totalDonations'];
+                ?>
+
+                <div class="shadow">
+                    <div class="entity">
+                        <div class="col-2">
+                            <img src="images/avatar.png">
+                        </div>
+                        <div class="col-10">
+                            <span class="entity-text"> <?php echo $row['name'] ?> </span> <br>
+                            <span class="entity-text"> <?php echo $row['title'] ?> </span>
+                            <br>
+                            <span class='entity-text-green'> <?php echo $row['type'] ?> </span>
+                        </div>
+                    </div>
+
+                    <span class="entity-text-desc">
+                        <?php echo $row['description'] ?>
+                    </span>
+
+                    <div class="entity-bottom-text">
+                        <span class="entity-goal-text"><b>Goal: N<?php echo $row['donation_amount'] ?></b></span>
+                        <span class="entity-raised-text"><b>Raised: <?php echo $donations == '' || $donations == 0 ? 'Nothing' : 'N' . $donations ?></b></span>
+                    </div>
                     <br>
-                    <span class='entity-text-green'> School Fees </span>
+                    <div class="entity-donate-button">
+                        <a href="make-payment.php?id=<?php echo $row['user_id'] ?>">Donate Now</a>
+                    </div>
                 </div>
-            </div>
 
-            <span class="entity-text-desc">
-                lorem50 A Student at Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-                quos dolore quod adipisci architecto ullam deleniti odit laudantium doloribus, aliquam voluptate
-                quo totam earum inventore facilis enim repudiandae molestiae reprehenderit. us, aliquam voluptate
-                quo totam earum inventore facilis enim repudiandae molestiae reprehenderit.
-            </span>
+        <?php }
+        }
 
-            <div class="entity-bottom-text">
-                <span class="entity-goal-text"><b>Goal: N10,000</b></span>
-                <span class="entity-raised-text"><b>Raised: N1,000</b></span>
-            </div>
-            <br>
-            <div class="entity-donate-button">
-                <a href="make-payment.html">Donate Now</a>
-            </div>
+        ?>
 
 
-        </div>
     </div>
 
 
