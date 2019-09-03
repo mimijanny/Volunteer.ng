@@ -1,0 +1,156 @@
+/* Top-navbar section style */
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+header {
+    background: #ffffff;
+    min-height: 70px;
+    
+}
+header .top-navbar {
+    color: #188038;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    padding: 15px;
+}
+
+header li a i {
+    color: #188038;
+    size: 50px;
+}
+
+header nav a:hover {
+    color: 188038;
+}
+
+.social-btn {
+    float: left;
+    margin-top: 25px;
+}
+
+.contact-btn {
+    float: right;
+    margin-top: 25px;
+}
+
+/* Header and second navbar style */
+
+.bg-img {   
+    background-image : url("../images/elder.jpg");
+    min-height: 550px;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+section nav {
+    float: right;
+    box-shadow: 0 0 3px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0001);
+    background-color: transparent;
+    opacity: 0.9;
+
+}
+
+section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ul {
+    margin: 0;
+    padding: 0;
+} */
+
+section li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+section nav a:hover {
+    color: 188038;
+    border-bottom: #188038 3px solid;
+}
+
+.carousel-item {
+    text-align:  center;
+    color: #fff;
+}
+
+.carousel-item .carousel-text {
+    padding-top: 155px;
+}
+.carousel-item .carousel-text h1 {
+    font-size: 40px;
+}
+
+.carousel-item .carousel-button button {
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #188038;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 300;
+    background: #188038;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.carousel-control{
+    color: #ffffff;
+}
+
+.carousel-item .carousel-control button {
+    border: none;
+    padding: 25px;
+    margin: 0 20px 0 20px;
+    border-radius: 60px;
+    box-shadow: 0 0 5px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+.carousel-item .carousel-control .btn-control-left {
+    float: left;
+    /* background-color: rgba(0, 0, 0, 0.0001); */
+    background-color: #fff;
+}
+.carousel-item .carousel-control .btn-control-right {
+    float: right;
+    /* background-color: rgba(0, 0, 0, 0.0001); */
+    background-color: #fff;
+}
+
+.logo {
+    float: left;
+}
+.menu {
+    float: right;
+    margin-top: 15px;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Volunteer NG</title>
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/howYouCanHelp.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -16,55 +17,72 @@
 </head>
 
 <body>
-    <!-- Top Header -->
-    <div class="topmost-nav">
-        <div class="left col-3">
-            <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href=""><i class="fab fa-instagram"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href=""><i class="fab fa-twitter"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href=""><i class="fab fa-youtube"></i> </a> &nbsp; &nbsp; &nbsp;
-        </div>
-        <div class="right col-6">
-            <a href="tel:7071234567"><i class="fa fa-phone"></i> +234 7071234567</a>
-            <a href="mailto:volunteerng@gmail.com"><i class="fa fa-envelope"></i> volunteerng@gmail.com</a>
-        </div>
-    </div>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div id="branding">
-                <a href="index.html">
-                    <img src="images/logo.png" width="165" height="70" />
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="entities.php">Entities</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">The Team</a></li>
-                    <li class="auth_button">
-                        <a href="sign-in.html"> <i class="fa fa-user"></i>
-                            Seek Donation</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Beging of the first navbar that contain contact info -->
+    <header class="top-navbar">
+      <div class="social-btn">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook"> </i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i> </a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="contact-btn">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-phone"> +234 7071234567</i></a>
+          </li>
+    
+          <li>
+            <a href="#"><i class="fa fa-envelope"> volunteerng@gmail.com</i> </a>
+          </li>
+        </ul>
+      </div>
     </header>
-
-    <!-- Main -->
-    <section id="main">
-        <div class="container">
-            <h1>You can make a difference!</h1>
-            <p>Commited to making the World a better place for Everyone</p>
-            <p><a href="payment.html" class="main_link_button">
-                    <i class="fa fa-heart"></i>Donate</a>
-                <a href="signup.php" class="main_link_button">
-                    <i class="fa fa-handshake"></i>I Need a Volunteer</a></p>
+    <!-- End of the first navbar -->
+    
+    
+    <section class="bg-img">
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="./images/volunteer.ng logo.svg" width="120px" height="50px">
+        </a>
+    
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cause">Cause</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#entities">Entities</a></li>
+        </ul>
+      </nav>
+      <div class="carousel-item">
+        <div class="carousel-text">
+    
+          <h1>Commited to make the world</h1>
+          <div class="carousel-control">
+            <button class="btn-control-left" href="#next"><i c class="fa fa-chevron-left"></i></button>
+            <button class="btn-control-right" href="#prev"><i class="fa fa-chevron-right"></i></button>
+          </div>
+          <h1>a better place for</h1>
+          <h1>everyone</h1>
         </div>
+    
+        <div class="carousel-button">
+          <button>Donate Now</button>
+        </div>
+      </div>
     </section>
-
+    
     <!-- How you can Help -->
 
     <section>
@@ -84,6 +102,7 @@
                         <a href="" class="donate-button">Donate</a>
                     </div>
                 </div>
+
                 <div class='column'>
                     <div class='col-2-of-3'>
                         <img src="images/giftbox (1).svg" alt="giftbox" class=" help-image">
@@ -96,6 +115,7 @@
                         <a href="#" class="donate-button">Donate</a>
                     </div>
                 </div>
+                
                 <div class='column'>
                     <div class='col-3-of-3'>
                         <img src="images/customer.svg" alt="customer" class="help-image">
