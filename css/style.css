@@ -458,3 +458,7 @@ article#about-col {
     flex-direction: row;
     text-align: center;
 }
+
+.white-fa {
+    color: #ffffff;
+}
